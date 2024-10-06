@@ -17,7 +17,7 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 ## Datasets
 - **Use Dataset**: [Heartbeat Dataset](https://www.kaggle.com/datasets/shayanfazeli/heartbeat)
 - **Testing Dataset**: [ECG Image Data](https://www.kaggle.com/datasets/erhmrai/ecg-image-data)
-  **Note**: The training dataset is imbalanced, which is why a two-model approach was utilized for improved classification performance.
+- **Note**: The training dataset is imbalanced, which is why a two-model approach was utilized for improved classification performance.
 
 ## Features
 - Image upload for heartbeat analysis.
