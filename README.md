@@ -48,17 +48,13 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
     
 ## Visualizations
 - **Visualization of Unbalanced Distribution of Category.**
-  ![](images/Screenshot 2024-10-06 214310.png)
   ![Heartbeat Pattern Visualization](images/Screenshot 2024-10-06 214310.png)
 
 - **Example image showing one heartbeat.**
   ![Example Heartbeat Image](images/Screenshot 2024-10-06 214251.png)
 
 - **GIF indicating program is running.**
-  ![Processing GIF](images/tasks5.gif)
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+  ![Processing GIF](images/Screenshot 2024-10-06 214251.png)
 
 ## Acknowledgments
 - Kaggle for the datasets.
