@@ -78,7 +78,7 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 ## Installation
 1. Clone this repository:
     ```bash
-    git clone <repository-url>
+    git clone <https://github.com/Joseph-Essa/Heartbeat_Classifier_App.git>
     ```
 
 2. Install required packages:
