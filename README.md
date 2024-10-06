@@ -41,8 +41,20 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
       if thresholded[y, x] == 255: 
          signal_pixels.append(y)
     ```
-- Binary classification to detect normal or abnormal heartbeats.
-- Multiclass classification to identify specific types of arrhythmias.
+- Evaluation for Binary classification to detect normal or abnormal heartbeats (XGBClassifier).
+   ```bash
+    Classification Report (Binary Model):
+               precision    recall  f1-score   support
+
+           0       0.94      0.94      0.94      3774
+           1       0.99      0.99      0.99     18118
+
+    accuracy                           0.98     21892
+    macro avg       0.96      0.96      0.96     21892
+    weighted avg       0.98      0.98      0.98     21892
+
+    ```
+- Evaluation for Multiclass classification to identify specific types of arrhythmias (Random Forest to classify).
 - Visualization of heartbeat patterns.
 
 ## Installation
