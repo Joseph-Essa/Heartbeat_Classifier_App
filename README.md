@@ -4,27 +4,25 @@
 The Heartbeat Classifier App is a machine learning application that analyzes ECG images to classify heartbeats into normal and various types of arrhythmias. The application employs a two-step classification process to ensure accurate diagnosis.
 
 ## Application Structure
-- 🖥️ **Backend**: FastAPI
-- 🎨 **Frontend**: Qt Designer
-- 📊 **Models**:
-  - 🔍 **Binary Classification Model**: XGBClassifier to detect if the heartbeat is normal or abnormal.
-  - 🏷️ **Multiclass Classification Model**: Random Forest to classify abnormal heartbeats into one of the following categories:
-    - Normal (N)
+- **Backend**: FastAPI
+- **Frontend**: Qt Designer
+- **Models**:
+  - **Binary Classification Model**: XGBClassifier to detect if the heartbeat is normal or abnormal.
+  - **Multiclass Classification Model**: Random Forest to classify abnormal heartbeats into one of the following categories:
     - Supraventricular Premature Beat (S)
     - Ventricular Premature Beat (V)
     - Fusion of Ventricular and Normal Beat (F)
     - Unknown Beat (Q)
 
 ## Datasets
-- 📚 **Training Dataset**: Heartbeat Dataset
-- 🧪 **Testing Dataset**: ECG Image Data  
+- **Use Dataset**: [Heartbeat Dataset](https://www.kaggle.com/datasets/shayanfazeli/heartbeat)
+- **Testing Dataset**: [ECG Image Data](https://www.kaggle.com/datasets/erhmrai/ecg-image-data)
   **Note**: The training dataset is imbalanced, which is why a two-model approach was utilized for improved classification performance.
 
 ## Features
-- 📤 Image upload for heartbeat analysis.
-- ⚙️ Extraction of 187 features from ECG images.
-- 📈 Visualization of heartbeat patterns.
-- ⏳ GIF indicator to show the program's processing status.
+- Image upload for heartbeat analysis.
+- Extraction of 187 features from ECG images.
+- Visualization of heartbeat patterns.
 
 ## Installation
 1. Clone this repository:
@@ -43,8 +41,11 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
     uvicorn main:app --reload
     ```
 
-2. Launch the Qt Designer frontend to upload ECG images for classification.
-
+2. Launch the Qt Designer frontend to upload ECG images for classification:
+    ```bash
+    python main.py
+    ```
+    
 ## Visualizations
 - **Visualization of a heartbeat pattern.**
   ![Heartbeat Pattern Visualization](path/to/heartbeat_pattern_image.png)
@@ -59,6 +60,6 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-- 📊 Kaggle for the datasets.
-- 🚀 FastAPI for the backend framework.
-- 🎨 Qt Designer for frontend design.
+- Kaggle for the datasets.
+- FastAPI for the backend framework.
+- Qt Designer for frontend design.
