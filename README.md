@@ -42,6 +42,7 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
          signal_pixels.append(y)
     ```
 - Evaluation for Binary classification to detect normal or abnormal heartbeats (XGBClassifier).
+
    ```bash
     Classification Report (Binary Model):
                precision    recall  f1-score   support
@@ -55,7 +56,22 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 
     ```
 - Evaluation for Multiclass classification to identify specific types of arrhythmias (Random Forest to classify).
+  ```bash
+    Classification Report (Multiclass Model):
+               precision    recall  f1-score   support
+
+         0.0       0.96      0.94      0.95       556
+         1.0       0.96      0.97      0.97      1448
+         2.0       0.83      0.88      0.85       162
+         3.0       0.99      0.99      0.99      1608
+
+    accuracy                           0.97      3774
+    macro avg       0.94      0.94      0.94      3774
+    weighted avg       0.97      0.97      0.97      3774
+    ```
 - Visualization of heartbeat patterns.
+  ![Visualization](images/Screenshot%202024-10-06%20224614.png)
+
 
 ## Installation
 1. Clone this repository:
@@ -79,11 +95,6 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
     python main.py
     ```
     
-## Visualizations
-
-- **GIF indicating program is running.**
-  ![Processing GIF](images/tasks5.gif)
-
 ## Acknowledgments
 - Kaggle for the datasets.
 - FastAPI for the backend framework.
