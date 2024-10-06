@@ -56,6 +56,7 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 
     ```
 - Evaluation for Multiclass classification to identify specific types of arrhythmias (Random Forest to classify).
+
   ```bash
     Classification Report (Multiclass Model):
                precision    recall  f1-score   support
@@ -70,6 +71,7 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
     weighted avg       0.97      0.97      0.97      3774
     ```
 - Visualization of heartbeat patterns.
+
   ![Visualization](images/Screenshot%202024-10-06%20224614.png)
 
 
