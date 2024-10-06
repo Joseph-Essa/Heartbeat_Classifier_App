@@ -1,4 +1,4 @@
-# Heartbeat Classifier App
+# Heartbeat(ECG) Classifier App
 
 ## Overview
 The Heartbeat Classifier App is a machine learning application that analyzes ECG images to classify heartbeats into normal and various types of arrhythmias. The application employs a two-step classification process to ensure accurate diagnosis.
