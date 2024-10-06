@@ -33,7 +33,7 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 - Image upload for heartbeat analysis.
 - Extraction of 187 features from ECG images.
   ![Extraction](images/Screenshot%202024-10-06%20215738.png)
-      ```bash
+    ```bash
     _, thresholded = cv2.threshold(gray_image, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     signal_pixels = []
     for x in range(thresholded.shape[1]):
