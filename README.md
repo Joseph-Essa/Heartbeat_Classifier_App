@@ -17,13 +17,32 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
 ## Datasets
 - **Use Dataset**: [Heartbeat Dataset](https://www.kaggle.com/datasets/shayanfazeli/heartbeat)
 - **Testing Dataset**: [ECG Image Data](https://www.kaggle.com/datasets/erhmrai/ecg-image-data)
-- **Note**: The training dataset is imbalanced, which is why a two-model approach was utilized for improved classification performance.
-- **Visualization of Unbalanced Distribution of Category.**
+- **Note**: The training dataset is Unbalanced, which is why a two-model approach was utilized for improved classification performance.
+
+
+-    **Visualization of Unbalanced Distribution of Category.**
+
   ![Heartbeat Pattern Visualization](images/Screenshot%202024-10-06%20214310.png)
+
+-    **Example image showing one heartbeat.**
+
+  ![Example Heartbeat Image](images/Screenshot%202024-10-06%20214251.png)
+
 
 ## Features
 - Image upload for heartbeat analysis.
 - Extraction of 187 features from ECG images.
+  ![Extraction](images/Screenshot%202024-10-06%20215738.png)
+      ```bash
+    _, thresholded = cv2.threshold(gray_image, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    signal_pixels = []
+    for x in range(thresholded.shape[1]):
+         y = np.argmax(thresholded[:, x])
+      if thresholded[y, x] == 255: 
+         signal_pixels.append(y)
+    ```
+- Binary classification to detect normal or abnormal heartbeats.
+- Multiclass classification to identify specific types of arrhythmias.
 - Visualization of heartbeat patterns.
 
 ## Installation
@@ -49,12 +68,6 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
     ```
     
 ## Visualizations
-- **Visualization of Unbalanced Distribution of Category.**
-  
-  ![Heartbeat Pattern Visualization](images/Screenshot%202024-10-06%20214310.png)
-
-- **Example image showing one heartbeat.**
-  ![Example Heartbeat Image](images/Screenshot%202024-10-06%20214251.png)
 
 - **GIF indicating program is running.**
   ![Processing GIF](images/tasks5.gif)
