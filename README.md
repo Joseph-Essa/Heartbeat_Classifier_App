@@ -96,8 +96,3 @@ The Heartbeat Classifier App is a machine learning application that analyzes ECG
     ```bash
     python main.py
     ```
-    
-## Acknowledgments
-- Kaggle for the datasets.
-- FastAPI for the backend framework.
-- Qt Designer for frontend design.
